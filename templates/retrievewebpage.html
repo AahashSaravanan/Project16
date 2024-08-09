@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Webpage Table</h2>
+        <table border = 3px>
+            <tr>
+                <th>Topic Name</th>
+                <th>Name</th>
+                <th>Url</th>
+            </tr>
+            {% for wbobj in wb %}
+                <tr>  
+                <td align="center">{{ wbobj.topic_name }}</td> 
+                <td align="center">{{ wbobj.name }}</td>
+                <td align="center">{{ wbobj.url }}</td>
+                </tr>
+
+            {% endfor %}
+                
+        </table>
+ </center>
+</body>
+</html>
